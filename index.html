@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="d-flex flex-column justify-content-around align-items-center h-100">
+            <div class="waviy mt-5 fs-1">
+                <span style="--i:1">C</span>
+                <span style="--i:2">H</span>
+                <span style="--i:3">R</span>
+                <span style="--i:4">O</span>
+                <span style="--i:5">N</span>
+                <span style="--i:6">O</span>
+            </div>
+            <button type="button" id="startBtn" class="btn btn-chr-primary text-white fw-bold chrono fs-3 rounded-circle shadow-lg p-3" style="width: 20rem; height: 20rem;" onclick="startChrono()">Start</button>
+            <div class="d-flex flex-row justify-content-center mb-5">
+                <button type="button" id="pauseBtn" class="btn btn-chr-secondary text-white fw-bold fs-4 me-4" onclick="pauseChrono()" style="width: 12rem; height: 4rem;">Pause</button>
+                <div class="btn-group" role="group" aria-label="Bouton pour règler la vitesse">
+                    <button type="button" class="btn btn-chr-secondary text-white fw-bold fs-4" onclick="changeSpeed('moins')" style="width: 8rem; height: 4rem;">-</button>
+                    <button type="button" id="speedBtn" class="btn btn-chr-secondary text-white fw-bold fs-4" disabled style="width: 8rem; height: 4rem;"></button>
+                    <button type="button" class="btn btn-chr-secondary text-white fw-bold fs-4" onclick="changeSpeed('plus')" style="width: 8rem; height: 4rem;">+</button>
+                </div>
+                <button type="button" class="btn btn-chr-3rd text-white fw-bold fs-4 ms-4" onclick="stopChrono()" style="width: 12rem; height: 4rem;">Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
